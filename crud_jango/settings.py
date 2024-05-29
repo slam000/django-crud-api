@@ -37,10 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'backend', # Add this line to the installed apps
-    'rest_framework', # Add this line to the installed apps
-    'corsheaders', # Add this line to the installed apps
-
+    # Add the following apps
+    'coreapi', 
+    'rest_framework', 
+    'corsheaders', 
+    'backend',
 
 ]
 
@@ -135,3 +136,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
     "http://127.0.0.1:9000",
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
+}
