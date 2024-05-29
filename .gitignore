@@ -1,0 +1,33 @@
+# .gitignore
+
+# Ignorar configuraciones específicas del IDE
+/.vscode
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+*.py[cod]
+*$py.class
+
+# Ignorar todos los archivos de log
+*.log
+
+# Ignorar archivos de base de datos
+*.sqlite
+
+# Ignorar archivos de entorno virtual
+venv/
+ENV/
+
+# Ignorar todos los archivos .env
+.env
+
+# Ignorar archivos de migraciones Django
+*/migrations/*
+
+# Ignorar archivos de media y static
+/media/
+/static/
+
+# Ignorar archivo de secret key
+secret_key.txt
